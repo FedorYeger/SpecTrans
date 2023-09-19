@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <header id="header" class="header" itemscope itemtype="https://schema.org/WPHeader" itemprop="https://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="https://schema.org/WPHeader">
       <div class="header__top">
         <div id="burger" class="burger">
           <a href="#elementt" class="burger__area"></a>
@@ -20,8 +20,8 @@
             <div class="burger__content">
               <a href="#element" class="burger-close"></a>
               <div class="header__menu">
-                <a href="#!" class="header__menu-logo logo">
-                  <img src="./image/logo-mini.svg" alt="Логотип 'Спец-Транс'">
+                <a href="#!" class="header__menu-logo logo" itemscope>
+                  <img src="./image/logo-mini.svg" itemprop="logo" alt="Логотип компании 'Спец-Транс'">
                 </a>
                 <ul class="header__menu-list">
                   <li class="header__menu-item">
@@ -49,8 +49,8 @@
         <div class="container">
           <div class="header__top-inner">
             
-            <a href="#!" class="header__logo logo">
-              <img src="./image/logo.svg" alt="Логотип 'Спец-Транс'">
+            <a href="#!" class="header__logo logo" itemscope>
+              <img src="./image/logo.svg" itemprop="logo" alt="Логотип 'Спец-Транс'">
             </a>
             <nav class="header__nav">
               <ul class="header__nav-list">
@@ -120,24 +120,32 @@
             <div class="materials__heading heading">Основные материалы</div>
             <div class="materials__row">
               <span>
-                <a class="materials__row-item materials__row-item--sand" href="#!">
-                  <img src="image/materials/sand.jpg" alt="">
-                  <div class="materials__item-description">Песок</div>
-                </a>
-                <a class="materials__row-item materials__row-item--stone" href="#!">
-                  <img src="image/materials/stone.jpg" alt="">
-                  <div class="materials__item-description">Щебень</div>
-                </a>
+                <figure itemscope class="materials__row-item materials__row-item--sand">
+                  <a  href="#!">
+                    <img src="image/materials/sand.jpg" itemscope alt="Песок" itemprop="image">
+                    <div class="materials__item-description" itemprop="name">Песок</div>
+                  </a>
+                </figure>
+                <figure itemscope class="materials__row-item materials__row-item--stone">
+                  <a href="#!">
+                    <img src="image/materials/stone.jpg" alt="Щебень" itemprop="image">
+                    <div class="materials__item-description" itemprop="name">Щебень</div>
+                  </a>
+                </figure>
               </span>
               <span>
-                <a class="materials__row-item materials__row-item--asphalt" href="#!">
-                  <img src="image/materials/аsphаlt.jpg" alt="">
-                  <div class="materials__item-description">Асфальтная крошка</div>
-                </a>
-                <a class="materials__row-item materials__row-item--technic" href="#!">
-                  <img src="image/technic/rend technic.jpg" alt="">
-                  <div class="materials__item-description">Аренда техники</div>
-                </a>
+                <figure itemscope class="materials__row-item materials__row-item--asphalt">
+                  <a href="#!">
+                    <img src="image/materials/аsphаlt.jpg" alt="Асфальтная крошка" itemprop="image">
+                    <div class="materials__item-description" itemprop="name">Асфальтная крошка</div>
+                  </a>
+                </figure>
+                <figure itemscope class="materials__row-item materials__row-item--technic">
+                  <a href="#!">
+                    <img src="image/technic/rend technic.jpg" alt="Аренда техники" itemprop="image">
+                    <figcaption class="materials__item-description" itemprop="name">Аренда техники</figcaption>
+                  </a>
+                </figure>
               </span>
             </div>
           </div>
@@ -218,13 +226,13 @@
               </div>
           </div>
       </section>
-      <footer class="main__footer footer" itemscope itemtype="https://schema.org/WPFooter" itemprop="https://schema.org/WPFooter">
+      <footer class="main__footer footer" itemscope itemtype="https://schema.org/WPFooter">
         <div class="container">
           <div class="footer__inner">
             <div class="footer__block3">
               <div class="footer__block">
-                <a href="#!" class="footer__logo logo">
-                  <img src="./image/logo.svg" alt="Логотип 'Спец-Транс'">
+                <a href="#!" class="footer__logo logo" itemscope>
+                  <img src="./image/logo.svg"  itemprop="logo" alt="Логотип 'Спец-Транс'">
                 </a>
                 <div class="footer__politics">Политика конфиденциальности © спец-транс, 2023</div>
               </div>
