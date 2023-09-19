@@ -1,0 +1,84 @@
+.materials__row {
+  @extend %flex;
+  & span{
+    @extend %flex;
+  }
+  margin-bottom: 80px;
+  .materials__row-item {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 20px;
+    transition: all .3s;
+    &:last-child{
+    margin-right: 0;
+    }
+    &:hover{
+      transform: translateY(-20px);
+      box-shadow: 0px 4px 80px 0px rgba(113, 133, 164, 0.50);
+    }
+    .materials__item-description {
+      @include text(40px,700,normal,none,0,#fff);
+      position: absolute;
+      left: 40px;
+      bottom: 40px;
+    }
+  }
+}
+// ===================== MEDIA =====================
+// ===================== MEDIA =====================
+
+// ===================== 1460 =====================
+@media (max-width: 1460px){
+  .materials__heading{
+    text-align: center;
+  }
+  .materials__row{
+    flex-direction: column;
+  }
+  .materials__row-item{
+    margin-bottom: 40px;
+  }
+}
+// ===================== 730 =====================
+@media (max-width: 730px){
+  .materials__row{
+    margin-bottom: 0px;
+    & span{
+      flex-direction: column;
+    }
+    .materials__row-item{
+      margin-right: 0;
+      height: 225px;
+      & .materials__item-description{
+        font-size: 32px;
+      }
+    }
+  }
+  .materials__row .materials__row-item:last-child img {
+    object-fit: cover;
+    width: 340px;
+    height: 226px;
+  }
+}
+// ===================== 400 =====================
+@media (max-width: 400px){
+  .materials__row{
+    .materials__row-item{
+      & .materials__item-description{
+        font-size: 24px;
+      }
+    }
+  }
+  .materials__row .materials__row-item:first-child img {
+    object-fit: cover;
+    width: 295px;
+    height: 226px;
+  }
+  .materials__row .materials__row-item:last-child img {
+    font-size: 24px;
+    object-fit: cover;
+    width: 295px;
+    height: 226px;
+  }
+}

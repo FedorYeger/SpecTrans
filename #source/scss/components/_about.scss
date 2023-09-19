@@ -1,0 +1,135 @@
+.about__inner {
+  margin-bottom: 80px;
+  @extend %flex;
+}
+.about__content {
+  margin-right: 30px;
+  .about__heading {
+    margin-bottom: 30px;
+  }
+  .about__paragraph {
+    @include text(18px,normal,1.4,580px,0,$about);
+  }
+}
+.about__values {
+  @extend %flex;
+  background-color: $background;
+  border-radius: 25px;
+  max-width: 700px;
+  width: 100%;
+  height: 445px;
+  .about__value-item {
+    &:first-child{
+      padding: 115px 0px 155px 85px;
+    }
+    &:last-child{
+      padding: 115px 128px 155px 0px;
+    }
+    .about__numbers {
+      @include text(88px,300,1.42,none,0,$color-title);
+      letter-spacing: 0.44px;
+    }
+    .about__numbers--plus{
+      position: relative;
+      &:after{
+        @extend %element;
+        @include element(url("../../../image/icons/plus.svg")no-repeat,45px,77px,0,none,none,115px,none);
+      }
+    }
+    .about__description {
+      @include text(24px,normal,1.42,none,0,$about);
+      letter-spacing: 0.44px;
+    }
+  }
+}
+// ===================== MEDIA =====================
+// ===================== MEDIA =====================
+
+// ===================== 1000 =====================
+@media (max-width: 1000px){
+  .about__values {
+    flex-direction: column;
+    .about__value-item{
+      &:first-child{
+        padding: 30px 50px 12px 85px;
+      }
+      &:last-child{
+        padding: 30px 90px 155px 50px;
+      }
+    }
+  }
+}
+// ===================== 700 =====================
+@media (max-width: 700px){
+  .about__values {
+    .about__value-item{
+      .about__numbers--plus:after {
+        left: 85px;
+      }
+      &:first-child{
+        padding: 60px 0px 12px 35px;
+      }
+      &:last-child{
+        padding: 30px 0 155px -1px;
+      }
+      .about__numbers{
+        font-size: 69px;
+      }
+      .about__description {
+        font-size: 21px;
+      }
+    }
+  }
+}
+// ===================== 635 =====================
+@media (max-width: 635px){
+  .about__inner{
+    flex-direction: column;
+  }
+  .about__content{
+    text-align: center;
+    margin-bottom: 20px;
+    .about__heading{
+      margin-top: 20px;
+    }
+    .about__paragraph{
+      font-size: 16px;
+    }
+  }
+  .about__values{
+    max-width: 350px;
+  }
+}
+// ===================== 400 =====================
+@media (max-width: 400px){
+  .about__inner{
+    flex-direction: column;
+    .about__content{
+      text-align: center;
+      .about__paragraph{
+        font-size: 14px;
+      }
+    }
+  }
+  .about__values{
+    height: 320px;
+    .about__value-item{
+      &:first-child{
+        padding: 30px 10px 12px 35px;
+      }
+      .about__numbers{
+        font-size: 50px;
+        // position: absolute;
+        font-weight: 600;
+        &::after{
+          // position: relative;
+          top: -10px;
+          left: 60px;
+        }
+      }
+      .about__description{
+        font-size: 18px;
+      }
+    }
+  }
+}

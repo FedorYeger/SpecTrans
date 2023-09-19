@@ -1,0 +1,195 @@
+.footer {
+  font-family: "Montserrat", sans-serif;
+  background-color: #424141;
+  .footer__inner {
+    display: flex;
+    align-items: center;
+    padding: 23px auto 23px auto;
+  }
+}
+.footer__logo {
+  margin-right: 50px;
+}
+.footer__politics {
+  @include text(12px,normal,1.2,none,none,#fff);
+  opacity: .6;
+  white-space: nowrap;
+  margin-right: 185px;
+}
+  .footer__nav-list {
+    margin-right: 165px;
+    @extend %flex;
+  }
+.footer__nav-item {
+  @include text(18px,normal,1.2,none,none,#fff);
+  transition: all .5s;
+  &:first-child{
+    margin-right: 50px;
+  }
+  &:hover{
+  color: $color-hover;
+  transition: all .3s;
+  }
+}
+.footer__social-list {
+  @extend %flex;
+  .footer__social-item {
+    margin-right: 25px;
+    &:last-child{
+      margin-right: 40px;
+    }
+  }
+}
+.footer__social-item{
+  &:first-child path{
+    transition: all .3s;
+    &:hover{
+      transition: all .3s;
+      fill: #0066ff;
+    }
+  }
+}
+.footer__social-item{
+  &:nth-child(2) path{
+    transition: all .3s;
+    &:hover{
+      transition: all .3s;
+      fill: #07a5e4;
+    }
+  }
+}
+.footer__social-item{
+  &:last-child path{
+    transition: all .3s;
+    &:hover{
+      transition: all .3s;
+      fill: $color-hover;
+    }
+  }
+}
+.footer__tel {
+  @include text(12px,normal,1.0,none,none,#fff);
+  border: 1px solid #FFF;
+  padding: 15px 30px;
+  white-space: nowrap;
+  transition: all .5s;
+  &:hover{
+    color: $color-hover;
+    border: 1px solid $color-hover;
+    transition: all .3s;
+  }
+}
+// ===================== MEDIA =====================
+// ===================== MEDIA =====================
+
+//===================== 1560 =====================
+@media (max-width: 1560px){
+  .footer{
+    .footer__inner{
+      padding: 25px 0;
+    }
+}
+.footer__logo{
+    grid-area: logo;
+  }
+  .footer__politics{
+    grid-area: pol;
+  }
+  .footer__nav-list{
+    grid-area: lst;
+  }
+  .footer__social-list{
+    grid-area: solist;
+  }
+  .footer__tel{
+    grid-area: tel;
+  }
+  .footer__block{
+    margin-right: 15px;
+    display: grid;
+    grid-template: 
+    "logo logo" 1fr
+    "pol pol" 1fr
+    / 1fr;
+  }
+}
+//===================== 1420 =====================
+@media (max-width: 1420px){
+  .footer{
+  }
+}
+// ===================== 1120 =====================
+@media (max-width: 1120px){
+  .footer__nav-list{
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 30px 0px 15px;
+    & .footer__nav-item:first-child{
+      margin-bottom: 10px;
+    }
+    & .footer__nav-item:last-child{
+      padding-right: 90px;
+    }
+  }
+}
+// ===================== 900 =====================
+@media (max-width: 900px){
+  .footer{
+  }
+  .footer__block2{
+    display: grid;
+    grid-template: 
+    "solist solist" 1fr
+    "tel tel" 1fr
+    / 1fr;
+  }
+  .footer__tel{
+    padding: 15px 180px 15px 80px;
+  }
+}
+// ===================== 840 =====================
+@media (max-width: 840px){
+  .footer__block3{
+    flex-direction: column;
+    align-items:start;
+    margin: 0;
+  }
+  .footer{
+    .footer__nav-list{
+      margin-left: 0;
+    }
+  }
+}
+// ===================== 660 =====================
+@media (max-width: 660px){
+  .footer__inner{
+    flex-direction: column;
+  }
+  .footer__tel{
+    padding: 15px 30px 15px;
+  }
+  .footer__politics{
+    font-size: 10px;
+  }
+  .footer__nav-item{
+    font-size: 16px;
+  }
+}
+// ===================== 400 =====================
+@media (max-width: 400px){
+  .footer__nav-item{
+    font-size: 14px;
+  }
+  .footer__tel{
+    font-size: 14px;
+  }
+  .footer__nav-item:first-child{
+    margin-right: 55px;
+  }
+}
+// ===================== 320 =====================
+@media (max-width: 320px){
+  .footer__block2{
+    margin-right: 100px;
+  }
+}

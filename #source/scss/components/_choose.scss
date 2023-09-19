@@ -1,0 +1,113 @@
+.choose__heading {
+  margin-top: 80px;
+}
+.choose__row{
+  font-family: "Montserrat", sans-serif;
+  @extend %flex;
+  position: relative;
+  margin-bottom: 80px;
+  .choose__row-item {
+    @include text(14px,500,1.4,none,0,#393838);
+    position: relative;
+    padding: 25px 25px 25px 77px;
+    border: 1px solid $border-choose;
+    border-radius: 8px;
+    width: 273px;
+    height: 90px;
+    margin-right: 14px;
+    &:nth-child(1){
+      max-width: 700px;
+    }
+    &:nth-child(3){
+      @extend %flex;
+    }
+    &:nth-child(5){
+      @extend %flex;
+    }
+    & span{
+      color: $color-hover;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  .choose__row-item--years{
+    &::before{
+      @extend %element;
+      @include element(url("../image/icons/decision/efficiency.svg") no-repeat,32px,32px,50%,none,none,0,-50%);
+      margin-left: 25px;
+    }
+  }
+  .choose__row-item--client{
+    &::before{
+      @extend %element;
+      @include element(url("../image/icons/decision/clients.svg") no-repeat,32px,32px,50%,none,none,0,-50%);
+      margin-left: 25px;
+    }
+  }
+  .choose__row-item--price{
+    &::before{
+      @extend %element;
+      @include element(url("../image/icons/decision/price.svg") no-repeat,32px,32px,50%,none,none,0,-50%);
+      margin-left: 25px;
+    }
+  }
+  .choose__row-item--stars{
+    &::before{
+      @extend %element;
+      @include element(url("../image/icons/decision/stars-empty.svg") no-repeat,32px,32px,50%,none,none,0,-50%);
+      margin-left: 25px;
+    }
+  }
+  .choose__row-item--efficiency{
+    &::before{
+      @extend %element;
+      @include element(url("../../image/icons/decision/efficiency.svg") no-repeat,32px,32px,50%,none,none,0,-50%);
+      margin-left: 25px;
+    }
+  }
+}
+// ===================== MEDIA =====================
+// ===================== MEDIA =====================
+
+// ===================== 1420 =====================
+@media (max-width: 1460px){
+  .choose__heading{
+    text-align: center;
+  }
+  .choose__row{
+    display: grid;
+    grid-template: repeat(2, 1fr);
+    grid-template-areas: 
+    "years price stars"
+    "client price efficiency";
+    row-gap: 30px;
+  }
+  .choose__row-item--years{
+    grid-area: years;
+  }
+  .choose__row-item--client{
+    grid-area: client;
+  }
+  .choose__row-item--price{
+    grid-area: price;
+  }
+  .choose__row-item--stars{
+    grid-area: stars;
+  }
+  .choose__row-item--efficiency{
+    grid-area: efficiency;
+  }
+}
+// ===================== 890=====================
+@media (max-width: 890px){
+  .choose__row{
+    display: flex;
+    flex-direction: column;
+    .choose__row-item{
+      &:last-child{
+        margin-right: 10px;
+      }
+    }
+  }
+}

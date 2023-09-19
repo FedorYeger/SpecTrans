@@ -1,0 +1,10 @@
+@mixin element($bg,$wd,$hg,$tp,$rg,$bt,$lf,$tY){
+  background: $bg;
+  width: $wd;
+  height: $hg;
+  top: $tp;
+  right: $rg;
+  bottom: $bt;
+  left: $lf;
+  transform: translateY($tY);
+}

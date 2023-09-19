@@ -1,0 +1,99 @@
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.container{
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+body{
+  z-index: -1;
+  font-family: "Rubik", sans-serif;
+  color: #1e1e1c;
+}
+html{
+  scroll-behavior: smooth;
+}
+input{
+  display: block;
+}
+textarea{
+  display: block;
+}
+.main {
+}
+.main__choose {
+}
+.main__materials {
+}
+.main__about {
+}
+.main__questions {
+}
+.main__deliver {
+}
+.main__footer {
+}
+.footer__block{
+  @extend %flex;
+}
+.footer__block2{
+  @extend %flex;
+}
+.footer__block3{
+  @extend %flex;
+}
+.button {
+  @include text(22px,500,1.4,none,0,#fff);
+  background-color: $color-hover;
+  border-radius: 8px;
+  padding: 20px 36px;
+  transition: all .3s;
+  cursor: pointer;
+
+  &:hover{
+    transform: scale(1.03);
+    transition: all .3s;
+  }
+}
+.heading {
+  @include text(42px,500,normal,none,60px,$color-title);
+}
+.element-fixed{
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+
+// ===================== MEDIA-HEADING =====================
+// ===================== MEDIA-HEADING =====================
+
+@media (max-width: 1420px){
+  .heading{
+    margin: 65px 0 40px;
+  }
+}
+@media (max-width: 650px){
+  .heading{
+    font-size: 32px;
+  }
+}
+@media (max-width: 515px){
+  .heading{
+    margin: 60px 0 30px;
+    font-size: 26px;
+  }
+}
+@media (max-width: 380px){
+  .heading{
+    margin: 60px 0 25px;
+    font-size: 24px;
+  }
+}

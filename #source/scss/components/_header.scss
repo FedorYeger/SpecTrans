@@ -1,0 +1,102 @@
+.header {
+  height: 100vh;
+  background: url("../image/prev.svg")70% 100% / cover no-repeat;
+  .header__top {
+    margin-bottom: 320px;
+    .header__top-inner {
+      @extend %flex;
+    }
+  }
+  .header__body {
+    .header__body-inner{}
+  }
+}
+.burger__wrapper,
+.burger__icon{
+  opacity: 0;
+  visibility: hidden;
+}
+.header__logo {
+  margin: 30px 90px 0 0;
+}
+
+.header__nav {
+  margin-right: auto;
+  margin-top: 30px;
+  .header__nav-list {
+    @extend %flex;
+  }
+}
+.header__nav-item {
+  margin-right: 50px;
+  &:last-child{
+    margin-right: 0;
+  }
+  .header__nav-link {
+    transition: all .5s;
+    color: $color-title;
+    white-space: nowrap;
+    &:hover{
+      transition: all .3s;
+      color: $color-hover;
+    }
+  }
+}
+.header__title {
+  @include text(60px,700,normal,700px,30px,#fff)
+}
+.header__paragraph {
+  @include text(20px,400,1.4,770px,60px,#fff)
+}
+
+// ===================== MEDIA =====================
+// ===================== MEDIA =====================
+
+// ===================== 990 =====================
+@media (max-width: 990px){
+  .header__logo{
+    margin: 0;
+  }
+  .header__nav{
+    visibility: hidden;
+    opacity: 0;
+  }
+  .burger__wrapper,
+  .burger__icon{
+  opacity: 1;
+  visibility: visible;
+}
+}
+// ===================== 650 =====================
+@media (max-width: 650px){
+  .header{
+    height: 600px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 39.07%, rgba(35, 35, 35, 0.70) 100%), url("../image/prev.svg")70% 100% / cover no-repeat;
+  }
+  .header .header__top {
+    margin-bottom: 210px;
+  }
+  .header__title{
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .header__paragraph{
+    font-size: 18px;
+    margin-bottom: 29px;
+  }
+}
+// ===================== 500 =====================
+@media (max-width: 500px){
+  .header__paragraph{
+    font-size: 16px;
+  }
+  .header__title{
+    font-size: 32px;
+  }
+}
+// ===================== 380 =====================
+@media (max-width: 380px){
+  .header .header__top {
+    margin-bottom: 110px;
+  }
+}

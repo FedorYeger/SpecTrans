@@ -1,0 +1,211 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+  &:target{
+    opacity: 1;
+    visibility: visible;
+  }
+  &:target .popup__content{
+    transform: perspective(800px) translate(0, 0) rotateX(0deg);
+    opacity: 1;
+  }
+}
+.popup__area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.popup__content {
+  opacity: 0;
+  transform: perspective(800px) translate(0, -100%) rotateX(45deg);
+  transition: all .5s;
+  .popup-close {
+    height: 4px;
+    width: 30px;
+    background-color: $color-title;
+    border-radius: 3px;
+    position: absolute;
+    transition: all .3s;
+    z-index: 1;
+    top: 20px;
+    right: -35px;
+    transform: rotate(45deg);
+    &::after{
+      content: "";
+      display: block;
+      height: 4px;
+      width: 30px;
+      background-color: $color-title;
+      border-radius: 3px;
+      position: absolute;
+      transition: all .3s;
+      z-index: 1;
+      transform: rotate(90deg);
+    }
+    // &:target{
+    //   transition: all .3s;
+    //   transform: rotate(0deg);
+    // }
+    // &:hover::after{
+    //   background: red;
+    // }
+  }
+}
+
+// ============================================================================
+
+.questions__form--popup {
+  margin-right: -45px;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0px 4px 40px 0px #07113312;
+  padding: 45px 45px 0px 45px;
+  position: relative;
+  &::before{
+    @include element($color-hover,320px,590px,-57px,0px,0px,50%,0%);
+    @extend %element;
+    transform: translateX(-50%);
+    z-index: -3;
+  }
+}
+.questions__form-lable--popup{
+  & span{
+    @include text(15px,normal,1.0,none,0,#181A28);
+  }
+}
+.questions__form-input--popup,
+.questions__form-text--popup {
+border-radius: 6px;
+border: 1px solid #DDD;
+width: 100%;
+margin-bottom: 20px;
+}
+.questions__form-text--popup{
+  margin-bottom: 20px;
+  resize: none;
+  height: 172px;
+  }
+.questions__form-input--popup::placeholder,
+.questions__form-text--popup::placeholder{
+@include text(18px,normal,1.0,none,none,rgba(24, 26, 40, 0.5))
+}
+.questions__form-input--popup,
+.questions__form-text--popup{
+padding: 23px 0px 24px 30px;
+resize: none;
+}
+.question__form-button--popup {
+  position: relative;
+  left: 30px;
+  top: -10px;
+  margin-left: 10px;
+  @include text(22px,500,1.4,none,0,#fff);
+  background-color: $color-hover;
+  border-radius: 8px;
+  padding: 20px 36px;
+  transition: all .3s;
+  &:hover{
+    transform: scale(1.03);
+    transition: all .3s;
+  }
+}
+
+// ===================== MEDIA =====================
+// ===================== MEDIA =====================
+
+// ===================== 990 =====================
+@media (max-width: 990px){
+  .popup__body{
+    margin-right: 60px;
+  }
+}
+// ===================== 686 =====================
+@media (max-width: 686px){
+  .questions__form--popup{
+    &::before{
+      display: none;
+    }
+  }
+  .question__form-button--popup {
+    // left: -270px;
+    // top: 0;
+    // display: block;
+    font-size: 16px;
+  }
+}
+// ===================== 640 =====================
+@media (max-width: 640px){
+  .questions__form--popup {
+    padding-bottom: 110px;
+  }
+  .questions__form-input--popup::placeholder,
+  .questions__form-text--popup::placeholder{
+    font-size: 16px;
+  }
+  .questions__form-text--popup{
+    margin-bottom: 0;
+    }
+  .questions__form-lable--popup{
+    & span{
+      font-size: 13.5px;
+    }
+  }
+  .question__form-button--popup {
+    left: -245px;
+    top: 65px;
+  }
+}
+// ===================== 591 =====================
+@media (max-width: 591px){
+  .questions__form--popup {
+    padding-bottom: 60px;
+  }
+  .questions__form-text--popup{
+    margin-bottom: 30px;
+  }
+  .question__form-button--popup {
+    left: -5px;
+    top: 25px;
+  }
+}
+// ===================== 500 =====================
+@media (max-width: 490px){
+  .questions__form--popup{
+    padding: 40px 10px 60px 10px;
+  }
+  .questions__form-input--popup,
+  .questions__form-text--popup{
+    padding: 15px 0px 15px 15px;
+    // width: 50%;
+  }
+  .questions__form-text--popup{
+    height: 100px;
+  }
+  .questions__form-input--popup::placeholder,
+  .questions__form-text--popup::placeholder{
+    font-size: 14px;
+  }
+  .questions__form-lable--popup{
+    & span{
+      font-size: 12px;
+    }
+  }
+}
