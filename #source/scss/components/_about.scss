@@ -33,7 +33,7 @@
       position: relative;
       &:after{
         @extend %element;
-        @include element(url("./image/icons/plus.svg")no-repeat,45px,77px,0,none,none,115px,none);
+        @include element(url("../image/icons/plus.svg")no-repeat,45px,77px,0,none,none,115px,none);
       }
     }
     .about__description {
