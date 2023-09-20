@@ -11,6 +11,9 @@
     @include text(18px,normal,1.4,580px,0,$about);
   }
 }
+.about__heading span{
+  text-transform: uppercase;
+}
 .about__values {
   @extend %flex;
   background-color: $background;

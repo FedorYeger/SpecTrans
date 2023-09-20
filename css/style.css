@@ -889,6 +889,10 @@ textarea {
   color: #67675F;
 }
 
+.about__heading span {
+  text-transform: uppercase;
+}
+
 .about__values {
   background-color: #f8f8f8;
   border-radius: 25px;
@@ -1346,7 +1350,7 @@ textarea {
   margin-bottom: 24px;
   color: #393838;
 }
-.deliver__row-info span {
+.deliver__row-info span:last-child {
   display: block;
   margin-top: 21px;
   font-size: normal;

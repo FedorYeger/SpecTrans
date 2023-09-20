@@ -39,7 +39,7 @@
   margin-top: 71px;
   text-align: center;
   @include  text(18px,500,1.0,none,24px,#393838);
-  & span{
+  & span:last-child{
     display: block;
     margin-top: 21px;
     @include text(normal,normal,1.0,none,none,#848692)
