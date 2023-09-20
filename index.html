@@ -20,26 +20,33 @@
             <div class="burger__content">
               <a href="#element" class="burger-close"></a>
               <div class="header__menu">
-                <a href="#!" class="header__menu-logo logo" itemscope>
+                <a href="#!" class="header__menu-logo logo" itemscope itemtype="http://schema.org/Organization">
                   <img src="./image/logo-mini.svg" itemprop="logo" alt="Логотип компании 'Спец-Транс'">
                 </a>
-                <ul class="header__menu-list" itemscope>
-                  <li class="header__menu-item" itemprop="url">
-                    <a href="#!" class="header__menu-link">Услуги</a>
-                  </li>
-                  <li class="header__menu-item" itemprop="url">
-                    <a href="#!" class="header__menu-link">Материалы</a>
-                  </li>
-                  <li class="header__menu-item" itemprop="url">
-                    <a href="#deliver" class="header__menu-link">Доставка и оплата</a>
-                  </li>
-                  <li class="header__menu-item" itemprop="url">
-                    <a href="#about" class="header__menu-link">О компании</a>
-                  </li>
-                  <li class="header__menu-item" itemprop="url">
-                    <a href="#questions" class="header__menu-link">Контакты</a>
-                  </li>
-                </ul>
+                <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+                  <ul class="header__menu-list" itemscope itemtype="https://schema.org/ItemList">
+                    <li class="header__menu-item" itemscope itemtype="https://schema.org/ItemList">
+                      <a href="#!" class="header__menu-link" itemprop="url">Услуги</a>
+                      <meta itemprop="name" content="Услуги">
+                    </li>
+                    <li class="header__menu-item" itemscope itemtype="https://schema.org/ItemList">
+                      <a href="#!" class="header__menu-link" itemprop="url">Материалы</a>
+                      <meta itemprop="name" content="Материалы">
+                    </li>
+                    <li class="header__menu-item" itemscope itemtype="https://schema.org/ItemList">
+                      <a href="#deliver" class="header__menu-link" itemprop="url">Доставка и оплата</a>
+                      <meta itemprop="name" content="Доставка и оплата">
+                    </li>
+                    <li class="header__menu-item" itemscope itemtype="https://schema.org/ItemList">
+                      <a href="#about" class="header__menu-link" itemprop="url">О компании</a>
+                      <meta itemprop="name" content="О компании">
+                    </li>
+                    <li class="header__menu-item" itemscope itemtype="https://schema.org/ItemList">
+                      <a href="#questions" class="header__menu-link" itemprop="url">Контакты</a>
+                      <meta itemprop="name" content="Контакты">
+                    </li>
+                  </ul>
+                </nav>
                 <a href="#popup" id="btn" class="header__menu-button button">Заказать звонок</a>
                 <div class="header__menu-politic">Политика конфиденциальности © спец-транс, 2023</div>
               </div>
@@ -48,26 +55,30 @@
         </div>
         <div class="container">
           <div class="header__top-inner">
-            
-            <a href="#!" class="header__logo logo" itemscope>
-              <img src="./image/logo.svg" itemprop="logo" alt="Логотип 'Спец-Транс'">
+            <a href="#!" class="header__logo logo" itemscope itemtype="http://schema.org/Organization">
+              <img src="./image/logo.svg" itemprop="logo" alt="Логотип компании 'Спец-Транс'">
             </a>
-            <nav class="header__nav" itemscope>
-              <ul class="header__nav-list">
-                <li class="header__nav-item">
-                  <a class="header__nav-link" href="#" itemprop="url">Услуги</a>
+            <nav class="header__nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+              <ul class="header__nav-list" itemscope itemtype="https://schema.org/ItemList">
+                <li class="header__nav-item" itemscope itemtype="https://schema.org/ItemList">
+                  <a class="header__nav-link" href="#!" itemprop="url">Услуги</a>
+                  <meta itemprop="name" content="Услуги">
                 </li>
-                <li class="header__nav-item">
-                  <a class="header__nav-link" href="#" itemprop="url">Материалы</a>
+                <li class="header__nav-item" itemscope itemtype="https://schema.org/ItemList">
+                  <a class="header__nav-link" href="#!" itemprop="url">Материалы</a>
+                  <meta itemprop="name" content="Материалы">
                 </li>
-                <li class="header__nav-item">
+                <li class="header__nav-item" itemscope itemtype="https://schema.org/ItemList">
                   <a class="header__nav-link" href="#deliver" itemprop="url">Доставка и оплата</a>
+                  <meta itemprop="name" content="Доставка и оплата">
                 </li>
-                <li class="header__nav-item">
+                <li class="header__nav-item" itemscope itemtype="https://schema.org/ItemList">
                   <a class="header__nav-link" href="#about" itemprop="url">О компании</a>
+                  <meta itemprop="name" content="О компании">
                 </li>
-                <li class="header__nav-item">
+                <li class="header__nav-item" itemscope itemtype="https://schema.org/ItemList">
                   <a class="header__nav-link" href="#questions" itemprop="url">Контакты</a>
+                  <meta itemprop="name" content="Контакты">
                 </li>
               </ul>
             </nav>
@@ -77,7 +88,7 @@
       </div>
       <div class="header__body">
         <div class="container">
-          <h1 class="header__title" itemscope itemtype="http://schema.org/headline" itemprop="headline">Продажа и доставка нерудных материалов</h1>
+          <h1 class="header__title"  itemprop="headline">Продажа и доставка нерудных материалов</h1>
           <p class="header__paragraph">
             У нас вы можете заказать материалы премиального качества.
             Индивидуальный подход и качественная продукция – ключевые преимущества
@@ -120,13 +131,13 @@
             <div class="materials__heading heading">Основные материалы</div>
             <div class="materials__row">
               <span>
-                <figure itemscope class="materials__row-item materials__row-item--sand">
+                <figure itemscope itemtype="https://schema.org/ImageObject" class="materials__row-item materials__row-item--sand">
                   <a  href="#!">
                     <img src="image/materials/sand.jpg" itemscope alt="Песок" itemprop="image">
                     <figcaption class="materials__item-description" itemprop="name">Песок</figcaption>
                   </a>
                 </figure>
-                <figure itemscope class="materials__row-item materials__row-item--stone">
+                <figure itemscope itemtype="https://schema.org/ImageObject" class="materials__row-item materials__row-item--stone">
                   <a href="#!">
                     <img src="image/materials/stone.jpg" alt="Щебень" itemprop="image">
                     <figcaption class="materials__item-description" itemprop="name">Щебень</figcaption>
@@ -134,13 +145,13 @@
                 </figure>
               </span>
               <span>
-                <figure itemscope class="materials__row-item materials__row-item--asphalt">
+                <figure itemscope itemtype="https://schema.org/ImageObject" class="materials__row-item materials__row-item--asphalt">
                   <a href="#!">
                     <img src="image/materials/аsphаlt.jpg" alt="Асфальтная крошка" itemprop="image">
                     <figcaption class="materials__item-description" itemprop="name">Асфальтная крошка</figcaption>
                   </a>
                 </figure>
-                <figure itemscope class="materials__row-item materials__row-item--technic">
+                <figure itemscope itemtype="https://schema.org/ImageObject" class="materials__row-item materials__row-item--technic">
                   <a href="#!">
                     <img src="image/technic/rend technic.jpg" alt="Аренда техники" itemprop="image">
                     <figcaption class="materials__item-description" itemprop="name">Аренда техники</figcaption>
@@ -231,18 +242,20 @@
           <div class="footer__inner">
             <div class="footer__block3">
               <div class="footer__block">
-                <a href="#!" class="footer__logo logo" itemscope>
-                  <img src="./image/logo.svg"  itemprop="logo" alt="Логотип 'Спец-Транс'">
+                <a href="#!" class="footer__logo logo" itemscope itemtype="http://schema.org/Organization">
+                  <img src="./image/logo.svg"  itemprop="logo" alt="Логотип компании 'Спец-Транс'">
                 </a>
                 <div class="footer__politics">Политика конфиденциальности © спец-транс, 2023</div>
               </div>
-              <nav class="footer__nav">
-                <ul class="footer__nav-list">
-                  <li class="footer__nav-item">
-                    <a href="#!">Материалы</a>
+              <nav class="footer__nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                <ul class="footer__nav-list" itemscope itemtype="https://schema.org/ItemList">
+                  <li class="footer__nav-item" itemscope itemtype="https://schema.org/ItemList">
+                    <a href="#!" itemprop="url">Материалы</a>
+                    <meta itemprop="name" content="Материалы">
                   </li>
-                  <li class="footer__nav-item">
-                    <a href="#!">Услуги</a>
+                  <li class="footer__nav-item" itemscope itemtype="https://schema.org/ItemList">
+                    <a href="#!" itemprop="url">Услуги</a>
+                    <meta itemprop="name" content="Услуги">
                   </li>
                 </ul>
             </div>
