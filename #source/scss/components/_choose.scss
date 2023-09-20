@@ -62,7 +62,7 @@
   .choose__row-item--efficiency{
     &::before{
       @extend %element;
-      @include element(url("../image/icons/decision/efficiency.svg") no-repeat,32px,32px,50%,none,none,0,-50%);
+      @include element(url("./image/icons/decision/efficiency.svg") no-repeat,32px,32px,50%,none,none,0,-50%);
       margin-left: 25px;
     }
   }

@@ -745,7 +745,7 @@ textarea {
   margin-left: 25px;
 }
 .choose__row .choose__row-item--efficiency::before {
-  background: url("../image/icons/decision/efficiency.svg") no-repeat;
+  background: url("./image/icons/decision/efficiency.svg") no-repeat;
   width: 32px;
   height: 32px;
   top: 50%;
@@ -915,7 +915,7 @@ textarea {
   position: relative;
 }
 .about__values .about__value-item .about__numbers--plus:after {
-  background: url("../image/icons/plus.svg") no-repeat;
+  background: url("./image/icons/plus.svg") no-repeat;
   width: 45px;
   height: 77px;
   top: 0;
@@ -1319,7 +1319,7 @@ textarea {
   position: relative;
 }
 .deliver__list .deliver__list-item::before {
-  background: url("../image/icons/star.svg");
+  background: url("./image/icons/star.svg");
   width: 24px;
   height: 24px;
   top: 0px;
