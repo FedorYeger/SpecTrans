@@ -29,7 +29,7 @@
     @extend %flex;
     &::before{
       @extend %element;
-      @include element(url("/image/icons/star.svg"),24px,24px,0px,0px,0px,-40px,-10%);
+      @include element(url("../image/icons/star.svg"),24px,24px,0px,0px,0px,-40px,-10%);
     }
   }
 }
