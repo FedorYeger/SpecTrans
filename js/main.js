@@ -35,6 +35,7 @@ function getItems(className){
       item.style.display = 'block'
     } else {
       item.style.display = 'none'
+      
     }
   })
 }
