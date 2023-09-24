@@ -78,7 +78,7 @@ button {
   background-color: transparent;
 }
 
-.footer__social-list, .footer__nav-list, .deliver__row, .deliver__list .deliver__list-item, .deliver__inner, .about__values, .about__inner, .materials__row span, .materials__row, .choose__row .choose__row-item:nth-child(5), .choose__row .choose__row-item:nth-child(3), .choose__row, .header__nav .header__nav-list, .header__main .header__top .header__top-inner, .footer__block3, .footer__block2, .footer__block {
+.footer__social-list, .footer__nav-list, .deliver__row, .deliver__list .deliver__list-item, .deliver__inner, .about__values, .about__inner, .materials__row span, .materials__row, .choose__row .choose__row-item:nth-child(5), .choose__row .choose__row-item:nth-child(3), .choose__row, .header__nav .header__nav-list, .header .header__top .header__top-inner, .footer__block3, .footer__block2, .footer__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -568,11 +568,11 @@ textarea {
   border-radius: 3px;
 }
 
-.header__main {
+.header {
   height: 100vh;
   background: url("../image/prev.svg") 70% 100%/cover no-repeat;
 }
-.header__main .header__top {
+.header .header__top {
   margin-bottom: 320px;
 }
 .burger__wrapper,
@@ -638,7 +638,7 @@ textarea {
   }
 }
 @media (max-width: 650px) {
-  .header__main {
+  .header {
     height: 600px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 39.07%, rgba(35, 35, 35, 0.7) 100%), url("../image/prev.svg") 70% 100%/cover no-repeat;
   }
