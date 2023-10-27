@@ -78,13 +78,13 @@ button {
   background-color: transparent;
 }
 
-.footer__social-list, .footer__nav-list, .deliver__row, .deliver__list .deliver__list-item, .deliver__inner, .about__values, .about__inner, .materials__row span, .materials__row, .choose__row .choose__row-item:nth-child(5), .choose__row .choose__row-item:nth-child(3), .choose__row, .header__nav .header__nav-list, .header__top .header__top-inner, .footer__block3, .footer__block2, .footer__block {
+.products__item, .products__list, .footer__social-list, .footer__nav-list, .deliver__row, .deliver__list .deliver__list-item, .deliver__inner, .about__values, .about__inner, .materials__row span, .materials__row, .choose__row .choose__row-item:nth-child(5), .choose__row .choose__row-item:nth-child(3), .choose__row, .header__nav .header__nav-list, .header__top .header__top-inner, .footer__block3, .footer__block2, .footer__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.deliver__list .deliver__list-item::before, .questions .questions__inner .questions__form::before, .about__values .about__value-item .about__numbers--plus:after, .choose__row .choose__row-item--efficiency::before, .choose__row .choose__row-item--stars::before, .choose__row .choose__row-item--price::before, .choose__row .choose__row-item--client::before, .choose__row .choose__row-item--years::before, .burger__icon::after, .burger__icon::before, .questions__form--popup::before {
+.products__list::after, .deliver__list .deliver__list-item::before, .questions .questions__inner .questions__form::before, .about__values .about__value-item .about__numbers--plus:after, .choose__row .choose__row-item--efficiency::before, .choose__row .choose__row-item--stars::before, .choose__row .choose__row-item--price::before, .choose__row .choose__row-item--client::before, .choose__row .choose__row-item--years::before, .burger__icon::after, .burger__icon::before, .questions__form--popup::before {
   content: "";
   display: block;
   position: absolute;
@@ -1655,12 +1655,89 @@ textarea {
     margin-right: 100px;
   }
 }
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  max-width: none;
+  margin-bottom: 25px;
+  color: #1d1d1b;
+}
+
 .products__list-item {
-  display: inline-block;
   cursor: pointer;
 }
 
 .active {
   transition: all 0.5s;
   color: #27ae60;
+}
+
+.products__list {
+  justify-content: space-around;
+  margin-bottom: 105px;
+  position: relative;
+}
+.products__list::after {
+  background: #CDCDCD;
+  width: 100%;
+  height: 1px;
+  top: 110%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0);
+}
+
+.products__list-item {
+  font-size: 24px;
+}
+
+.products__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.products__item {
+  align-items: start;
+  margin-bottom: 80px;
+}
+
+.products__image {
+  margin-right: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.products__paragraph {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.3;
+  max-width: 800px;
+  margin-bottom: none;
+  color: #1d1d1b;
+  margin-bottom: 25px;
+}
+
+.paragraph__content--sand {
+  margin-bottom: 60px;
+}
+
+.price-item {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3;
+  max-width: 595px;
+  margin-bottom: 25px;
+  color: #1d1d1b;
+  position: relative;
+}
+.price-item:last-child {
+  margin-bottom: 0;
+}
+.price-item span {
+  display: inline-block;
+  background-color: #ccc;
+  width: 323px;
+  height: 1px;
 }/*# sourceMappingURL=style.css.map */
