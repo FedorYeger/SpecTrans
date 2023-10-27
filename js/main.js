@@ -32,7 +32,7 @@ filter()
 function getItems(className){
   items.forEach(item => {
     if (item.classList.contains(className)) {
-      item.style.display = 'block'
+      item.style.display = 'flex'
     } else {
       item.style.display = 'none'
       
