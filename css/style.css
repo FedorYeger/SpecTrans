@@ -1822,7 +1822,12 @@ h2 {
     border-radius: 8px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 397px) {
+  .price-item span {
+    width: 58px;
+  }
+}
+@media (max-width: 350px) {
   .price-item span {
     width: 28px;
   }

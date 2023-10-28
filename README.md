@@ -3,6 +3,7 @@
 ## Stack:
 - HTML 5
 - SCSS
+- Java Script 
 - Microdata in schema.org
 
 ## Link:
