@@ -158,6 +158,10 @@ textarea {
   position: fixed;
 }
 
+.questions__description span.questions__description--color {
+  color: #1e1e1c;
+}
+
 @media (max-width: 1420px) {
   .heading {
     margin: 65px 0 40px;
@@ -1655,7 +1659,7 @@ textarea {
     margin-right: 100px;
   }
 }
-h2 {
+h3 {
   font-size: 32px;
   font-weight: 600;
   line-height: 1.3;
@@ -1766,7 +1770,7 @@ h2 {
   .products__list-item {
     font-size: 20px;
   }
-  .products__content h2 {
+  .products__content h3 {
     font-size: 28px;
   }
   .products__content p {
@@ -1802,7 +1806,7 @@ h2 {
   .products__image {
     max-width: 370px;
   }
-  .products__content h2 {
+  .products__content h3 {
     font-size: 24px;
   }
   .products__content p {
@@ -1817,9 +1821,16 @@ h2 {
   }
 }
 @media (max-width: 420px) {
+  .products__item {
+    margin-bottom: 30px;
+  }
   .products__image {
     max-width: 315px;
     border-radius: 8px;
+    margin-bottom: 25px;
+  }
+  h3 {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 397px) {
